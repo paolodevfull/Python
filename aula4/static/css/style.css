@@ -1,0 +1,28 @@
+
+.content{
+    position: absolute;
+    left: 20%;
+    width: 70%;
+    font-size: 20px;
+    background-color: rgb(56, 90, 153);
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+
+
+.menu{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 10%;
+    background-color: rgb(3, 59, 163);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}

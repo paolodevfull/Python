@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="menu">
+        <nav>
+            <ul>
+                <a href="{{ url_for('layout') }}">Home</a>  <!-- as rotas são chamadas pelo nome das funções de rota no app-->
+                <a href="{{ url_for('expectativas') }}">Expectativas</a>
+                <a href="{{ url_for('curriculo') }}">Curriculo</a>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+</body>
+
+</html>

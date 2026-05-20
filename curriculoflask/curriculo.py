@@ -1,0 +1,93 @@
+from flask import Flask
+
+app = Flask(__name__)
+
+
+@app.route("/")
+def home():
+    return """
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Currículo de Paolo Eduardo Monteiro Lopes de Andrade</title>
+</head>
+<body>
+    <h1>Paolo Eduardo Monteiro Lopes de Andrade</h1>
+    
+    <h2>Dados Pessoais</h2>
+    <ul>
+        <li><strong>Telefone:</strong> (31) 98271-5775</li>
+        <li><strong>E-mail:</strong> paolodev.fullstack@gmail.com</li>
+    </ul>
+
+    <h2>Resumo Profissional</h2>
+    <p>Busco oportunidade para desenvolver minhas habilidades de desenvolvimento e suporte técnico, além de evoluir minhas habilidades praticas em hardware, rede e insfraestutura.</p>
+
+    <h2>Experiência de Trabalho</h2>
+    <ul>
+        <li>
+            <h3>Estagiario MSP - Otimizar Tecnologia</h3>
+            <p><em>02/2026 - Atualmente</em></p>
+            <p>Suporte Técnico a Usuários(Help Desk)<br>
+                Monitoramento de alertas e incidentes<br>
+                Apoio na manutenção de servidores e redes<br>
+                Suporte em hardware e infraestutura
+            </p>
+        </li>
+    </ul>
+
+    <h2>Formação Acadêmica</h2>
+    <ul>
+        <li>
+            <strong>Ensino Médio Técnico em Informatica 3° Ano em PC<strong><br>
+            Colégio Cotemig Barroca (Turno Manhã) - Conclusão Dez/2026
+        </li>
+    </ul>
+
+    <h2>Idiomas</h2>
+    <ul>
+        <li><strong>Inglês:</strong>Básico/Intermediário</li>
+        <li><strong>PortuguêS:</strong>Nátivo</li>
+    </ul>
+
+    <h2>Cursos e Certificações</h2>
+    <ul>
+        <ul>
+            Cisco NetWorking Academy
+            <li>   
+                <li>Introdução a internet das Coisas</li>
+                <li>Introdução a Cibersegurança</li>
+                <li>Digital Awareness</li>
+                <li>Uso de computadores e dispositivos móveis</li>
+            </li>
+        </ul>
+        <ul>
+        <br>
+            Outros:
+            <li>   
+                <li>Montagem e configuração de computadores (Cotemig)</li>
+                <li>Robotica(Cotemig)</li>
+            </li>
+        </ul>
+    </ul>
+
+    <h2>Habilidades</h2>
+    <ul>
+        <li>HTML,CSS,PHP,MySQL,Python</li>
+        <li>Help Desk</li>
+        <li>Noções de rede e infraestrutura</li>
+        <li>Lógica de progamação</li>
+        <li>Trabalho em equipe</li>
+        <li>Comunicativo</li>
+        <li>Proativo</li>
+        <li>Manutenção de Hardware</li>
+    </ul>
+    
+</body>
+</html>
+    """
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
