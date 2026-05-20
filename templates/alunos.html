@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block title %}Página notas{% endblock %}
+
+{% block conteudo %}
+
+    {% for item in aluno %}
+        <p>Nome: {{ item.nome }}</p>
+        <p>Nota: {{ item.nota }}</p>
+
+        {#if para calcular nota}
+
+        {% if item.nota | int >= 7 %}
+            <p><strong>Status:</strong> Aprovado</p>
+        {% else %}
+            <p><strong>Status:</strong> Reprovado</p>
+        {% endif %}
+        <hr>
+    {% endfor %}
+
+{% endblock %}
